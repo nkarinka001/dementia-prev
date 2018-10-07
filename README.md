@@ -18,6 +18,9 @@ Fight dementia with us!
 ## About
 This project is done by Team Blank for module CZ3002.
 
+## Contributing
+Always PR to the dev branch
+
 ## Authors
   - Eko Edita - [Github](github.com/ekoeditaa)
   - Michelle Vanessa
