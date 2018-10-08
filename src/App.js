@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import styles from './App.module.scss';
+import Home from './components/Game/Home/Home';
 
 class App extends Component {
   render() {
