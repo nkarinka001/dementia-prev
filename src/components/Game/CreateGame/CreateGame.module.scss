@@ -1,0 +1,67 @@
+$main-color: #422242;
+$header-color: #5A3D5D;
+$button-color: #725A72;
+$input-color: #D0C8D0;
+
+@font-face{
+    font-family: lato;
+    src: local('font/lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: lato-thin;
+    src: local('font/lato/Lato-Thin.ttf');
+}
+
+.create-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.photos-label {
+    font-family: lato;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photos-input {
+    background-color: $input-color;
+    width: 810px;
+    min-height: 260px;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.photo-upload {
+    border-radius: 10px;
+    border: 2px $main-color solid;
+    background-color: $input-color;
+    width: 770px;
+    height: 50px;
+    font-family: lato-light;
+    color: $main-color;
+    font-size: 45px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.create-button {
+    background-color: $button-color;
+    color: white;
+    font-family: lato;
+    font-size: 60px;
+    border: none;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 25px;
+}

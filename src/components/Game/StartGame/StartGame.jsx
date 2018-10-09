@@ -1,11 +1,18 @@
 import React from 'react';
-
 import styles from './StartGame.module.scss';
+import { Button } from 'semantic-ui-react';
 
-function StartGame () {
+function StartGame() {
   return (
-    <div>
-      StartGame component. Rendered before user starts the game.
+    <div className={styles['start-game']}>
+      <div className={styles['btn-container']}>
+        <Button className={styles['game-button']}>
+          Default game
+        </Button>
+        <Button className={styles['game-button']}>
+          Custom game
+        </Button>
+      </div>
     </div>
   )
 }

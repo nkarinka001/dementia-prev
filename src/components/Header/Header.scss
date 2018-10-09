@@ -1,9 +1,10 @@
 $main-color: #422242;
 $header-color: #5A3D5D;
+$button-color: #725A72;
 
 @font-face {
     font-family: pacifico;
-    src: local('font/pacifico.ttf');
+    src: local('font/pacifico/Pacifico.ttf');
 }
 
 .header {
@@ -17,4 +18,8 @@ $header-color: #5A3D5D;
     justify-content: center;
     border-bottom: 1px solid white;
     font-family: pacifico;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    min-width: 100%;
 }

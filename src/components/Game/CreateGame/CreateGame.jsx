@@ -1,12 +1,22 @@
 import React from 'react';
-
 import styles from './CreateGame.module.scss';
 
 function CreateGame() {
   return (
-    <div>
-      <div> Create game component </div>
-      <div> Upload photo and type name until 10 times </div>
+    <div className={styles['create-container']}>
+      <div className={styles['photos-container']}>
+        <label className={styles['photos-label']}>
+          Upload photos
+        </label>
+        <div className={styles['photos-input']}>
+          <input type='textbox' className={styles['photo-upload']} />
+          <input type='textbox' className={styles['photo-upload']} />
+          <input type='textbox' className={styles['photo-upload']} />
+        </div>
+        <button className={styles['create-button']}>
+          Publish
+        </button>
+      </div>
     </div>
   )
 }

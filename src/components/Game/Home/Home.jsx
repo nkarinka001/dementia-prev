@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from './Home.module.scss';
 import Header from '../../Header/Header';
+import StartGame from '../StartGame/StartGame';
+import CreateGame from '../CreateGame/CreateGame';
 
 function Home() {
   return (
-    <div>
+    <div className={styles['home-container']}>
       <Header />
-      Home component. This component is rendered first after user logs in.
+      <StartGame />
+      <CreateGame />
     </div>
   )
 }
