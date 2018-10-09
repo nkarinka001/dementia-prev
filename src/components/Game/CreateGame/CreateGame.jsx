@@ -3,17 +3,25 @@ import styles from './CreateGame.module.scss';
 
 function CreateGame() {
   return (
-    <div className={styles['create-container']}>
-      <div className={styles['photos-container']}>
-        <label className={styles['photos-label']}>
+    <div className={styles['create']}>
+      <div className={styles['create-container']}>
+        <label className={styles['create-title']}>
           Upload photos
         </label>
-        <div className={styles['photos-input']}>
-          <input type='textbox' className={styles['photo-upload']} />
-          <input type='textbox' className={styles['photo-upload']} />
-          <input type='textbox' className={styles['photo-upload']} />
+        <div className={styles['create-inputs']}>
+          {/* <input type='image'
+            src='' /> */}
+          <input type='textbox'
+            className={styles['create-upload']}
+            placeholder='Description' />
+          <input type='textbox'
+            className={styles['create-upload']}
+            placeholder='Description' />
+          <input type='textbox'
+            className={styles['create-upload']}
+            placeholder='Description' />
         </div>
-        <button className={styles['create-button']}>
+        <button className={styles['create-btn']}>
           Publish
         </button>
       </div>

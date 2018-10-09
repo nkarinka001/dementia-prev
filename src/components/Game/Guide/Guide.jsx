@@ -2,10 +2,19 @@ import React from 'react';
 
 import styles from './Guide.module.scss';
 
-function Guide () {
+function Guide() {
   return (
-    <div>
-      Guide component. Tell the user what to do before the game starts.
+    <div className={styles['guide']}>
+      <div>
+        <div className={styles['guide-container']}>
+          <div className={styles['guide-text']}>
+            Show this to your elderly friend
+        </div>
+        </div>
+        <button className={styles['guide-btn']}>
+          Start
+      </button>
+      </div>
     </div>
   )
 }

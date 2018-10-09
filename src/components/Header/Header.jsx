@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './Header.scss';
+import styles from './Header.module.scss';
 
 function Header() {
     return (
-        <div className='header'>
+        <div className={styles['header']}>
             DementiaPrev
         </div>
     )

@@ -1,0 +1,89 @@
+$main-color: #422242;
+$header-color: #5A3D5D;
+$button-color: #725A72;
+$input-color: #D0C8D0;
+
+@font-face {
+    font-family: lato;
+    src: local('font/lato/Lato-Regular.ttf');
+}
+
+.midgame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.midgame-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.midgame-title {
+    font-family: lato;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.midgame-container {
+    border-radius: 30px;
+    border: none;
+    background-color: $input-color;
+    width: 890px;
+    height: 310px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+}
+
+.midgame-text {
+    font-family: lato;
+    font-size: 80px;
+    color: $main-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.midgame-btn-yes {
+    width: 440px;
+    border-radius: 20px;
+    border: none;
+    font-family: lato;
+    font-size: 60px;
+    color: white;
+    background-color: #34C84A;
+}
+
+.midgame-btn-no {
+    width: 440px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-family: lato;
+    font-size: 60px;
+    color: white;
+    background-color: #FC625D;
+}
