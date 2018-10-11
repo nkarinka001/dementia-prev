@@ -1,0 +1,43 @@
+$main-color: #422242;
+$header-color: #5A3D5D;
+$button-color: #725A72;
+$input-color: #D0C8D0;
+
+@font-face {
+    font-family: lato;
+    src: local('font/lato/Lato-Regular.ttf');
+}
+
+.endgame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.endgame-container {
+    background-color: $input-color;
+    width: 810px;
+    min-height: 210px;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.endgame-text {
+    font-family: lato;
+    font-size: 80px;
+    color: $main-color;
+    text-align: center;
+}
+
+.endgame-btn {
+    width: 890px;
+    height: 140px;
+    border-radius: 20px;
+    background-color: $button-color;
+    color: white;
+    font-family: lato;
+    font-size: 60px;
+    margin-top: 20px;
+    border: none;
+}

@@ -5,16 +5,16 @@ $input-color: #D0C8D0;
 
 @font-face {
     font-family: lato;
-    src: local('font/lato/Lato.-Regular.ttf');
+    src: local('font/lato/Lato-Regular.ttf');
 }
 
-.start-game {
+.choose {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 }
 
-.start-title {
+.choose-title {
     font-family: lato;
     font-size: 60px;
     display: flex;
@@ -28,14 +28,24 @@ $input-color: #D0C8D0;
     justify-content: center;
 }
 
-.game-button {
-    height: 375px;
-    width: 465px;
+.choose-btn {
     background-color: $button-color;
-    border: none;
     border-radius: 20px;
-    font-size: 80px;
+    border: none;
+    width: 485px;
+    height: 220px;
     margin: 10px;
+}
+
+.btn-text {
     color: white;
     font-family: lato;
+}
+
+.btn-name {
+    font-size: 80px;
+}
+
+.btn-date {
+    font-size: 30px;
 }
