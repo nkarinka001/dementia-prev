@@ -1,18 +1,19 @@
 import React from 'react';
 import styles from './StartGame.module.scss';
 
-function StartGame() {
+function StartGame(props) {
+
   return (
     <div className={styles['start-game']}>
       <div className={styles['start-title']}>
-        Choose game
+        {props.title}
       </div>
       <div className={styles['btn-container']}>
         <button className={styles['game-button']}>
-          Default game
+          {props.left}
         </button>
         <button className={styles['game-button']}>
-          Custom game
+          {props.right}
         </button>
       </div>
     </div>

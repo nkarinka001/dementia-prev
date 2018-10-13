@@ -2,17 +2,17 @@ import React from 'react';
 
 import styles from './Guide.module.scss';
 
-function Guide() {
+function Guide(props) {
   return (
     <div className={styles['guide']}>
       <div>
         <div className={styles['guide-container']}>
           <div className={styles['guide-text']}>
-            Show this to your elderly friend
+            {props.desc}
         </div>
         </div>
         <button className={styles['guide-btn']}>
-          Start
+          {props.button}
       </button>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './MidGame.module.scss';
 
-function MidGame() {
+function MidGame(props) {
   return (
     <div className={styles['midgame']}>
       <div className={styles['midgame-content']}>
@@ -9,13 +9,22 @@ function MidGame() {
           Is this...
         </div>
         <div className={styles['midgame-container']}>
-          <div className={styles['image-container']}>
-            <img
-              className={styles['image']}
-              src='https://image.flaticon.com/icons/png/512/23/23228.png' />
+          <div className={styles['midgame-prof']}>
+            <div className={styles['midgame-card']}>
+              <div className={styles['image-container']}>
+                <img
+                  className={styles['image']}
+                  src='https://image.flaticon.com/icons/png/512/23/23228.png' />
+              </div>
+              <div className={styles['midgame-text']}>
+                {props.name}?
+              </div>
+            </div>
           </div>
-          <div className={styles['midgame-text']}>
-            Mr John?
+          <div className={styles['progress-bar-container']}>
+            <div className={styles['progress-bar']}>
+              {props.progress}%
+            </div>
           </div>
         </div>
         <div className={styles['btn-container']}>

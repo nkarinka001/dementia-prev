@@ -11,33 +11,79 @@ $input-color: #D0C8D0;
 .endgame {
     display: flex;
     flex-direction: row;
+    justify-content: center;;
+}
+
+.endgame-title {
+    font-family: lato;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
 .endgame-container {
     background-color: $input-color;
+    border: none;
+    border-radius: 30px;
     width: 810px;
-    min-height: 210px;
-    border-radius: 20px;
     padding: 40px;
+    min-height: 210px;
     margin-top: 20px;
+    font-family: lato;
+    color: $main-color;
+    font-size: 40px;
 }
 
-.endgame-text {
+.leaderboard-header {
+    color: $button-color;
     font-family: lato;
-    font-size: 80px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.leaderboard-entry {
     color: $main-color;
-    text-align: center;
+    font-family: lato;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.leaderboard-rank {
+    text-align: left;
+    width: 100px;
+}
+
+.leaderboard-name {
+    text-align: left;
+    width: 400px;
+}
+
+.leaderboard-score {
+    text-align: right;
+    width: 130px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .endgame-btn {
-    width: 890px;
-    height: 140px;
+    width: 440px;
+    padding: 20px;
     border-radius: 20px;
-    background-color: $button-color;
-    color: white;
+    border: none;
     font-family: lato;
     font-size: 60px;
-    margin-top: 20px;
-    border: none;
+    color: white;
+    background-color: $button-color;
 }
