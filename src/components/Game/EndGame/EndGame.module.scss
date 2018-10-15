@@ -87,3 +87,51 @@ $input-color: #D0C8D0;
     color: white;
     background-color: $button-color;
 }
+
+@media screen and (max-width: 600px ) {    
+    .endgame-title {
+        font-size: 20px;
+    }
+    
+    .endgame-container {
+        border-radius: 10px;
+        width: 270px;
+        padding: 13px;
+        min-height: 70px;
+        margin-top: 7px;
+        font-size: 13px;
+    }
+    
+    .leaderboard-header {
+        font-size: 10px;
+        margin-bottom: 7px;
+    }
+    
+    .leaderboard-entry {
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+    
+    .leaderboard-rank {
+        width: 133px;
+    }
+    
+    .leaderboard-name {
+        width: 133px;
+    }
+    
+    .leaderboard-score {
+        width: 43px;
+    }
+    
+    .btn-container {
+        margin-top: 7px;
+    }
+    
+    .endgame-btn {
+        width: 147px;
+        padding: 7px;
+        border-radius: 7px;
+        font-size: 20px;
+    }
+}

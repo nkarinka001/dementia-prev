@@ -49,3 +49,24 @@ $input-color: #D0C8D0;
 .btn-date {
     font-size: 30px;
 }
+
+@media screen and (max-width: 600px) {
+    .choose-title {
+        font-size: 20px;
+    }
+    
+    .choose-btn {
+        border-radius: 7px;
+        width: 161px;
+        height: 76px;
+        margin: 3px;
+    }
+    
+    .btn-name {
+        font-size: 27px;
+    }
+    
+    .btn-date {
+        font-size: 10px;
+    }
+}

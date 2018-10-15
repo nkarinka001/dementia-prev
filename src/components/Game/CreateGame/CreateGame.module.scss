@@ -68,3 +68,34 @@ $input-color: #D0C8D0;
     padding: 25px;
     margin-top: 25px;
 }
+
+@media screen and (max-width: 600px) {
+    .create-title {
+        font-size: 20px;
+    }
+    
+    .create-inputs {
+        width: 270px;
+        min-height: 87px;
+        border-radius: 7px;
+        padding: 13px;
+        margin-top: 7px;
+    }
+    
+    .create-upload {
+        border-radius: 3px;
+        border: 1px $main-color solid;
+        width: 250px;
+        height: 10px;
+        font-size: 15px;
+        padding: 7px;
+        margin: 3px;
+    }
+    
+    .create-btn {
+        font-size: 20px;
+        border-radius: 7px;
+        padding: 8px;
+        margin-top: 8px;
+    }
+}

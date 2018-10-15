@@ -23,3 +23,9 @@ $input-color: #D0C8D0;
     // top: 0;
     min-width: 100%;
 }
+
+@media screen and (max-width: 600px) {
+    .header {
+        font-size: 30px;
+    }
+}
