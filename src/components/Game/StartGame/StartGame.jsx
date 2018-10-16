@@ -8,9 +8,11 @@ function StartGame() {
         Choose game
       </div>
       <div className={styles['btn-container']}>
-        <button className={styles['game-button']}>
-          Default game
-        </button>
+        <Link to="/start-game">
+            <button className={styles['game-button']}>
+              Default game
+            </button>
+        </Link>
         <button className={styles['game-button']}>
           Custom game
         </button>

@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import styles from './App.module.scss';
 import Home from './components/Game/Home';
 import StartGame from './components/Game/StartGame';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route , Redirect} from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -11,6 +11,7 @@ class App extends Component {
       <Switch>
         <Route path='/home' component={Home} />
         <Route path='/start-game' component={StartGame} />
+        
       </Switch>
     );
   }

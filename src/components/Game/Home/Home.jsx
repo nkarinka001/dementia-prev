@@ -13,11 +13,6 @@ function Home() {
     <div className={styles['home-container']}>
       <Header />
       <StartGame />
-      <CreateGame />
-      <Guide />
-      <Choose />
-      <MidGame />
-      <EndGame />
     </div>
   )
 }
