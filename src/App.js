@@ -11,7 +11,7 @@ class App extends Component {
       <Switch>
         <Route path='/home' component={Home} />
         <Route path='/start-game' component={StartGame} />
-        
+        <Route render={() => <Redirect to='/home' />} />
       </Switch>
     );
   }
