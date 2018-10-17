@@ -20,7 +20,7 @@ function EndGame() {
             <div className={styles['leaderboard-name']}>Michelle</div>
             <div className={styles['leaderboard-score']}>100</div>
           </div>
-          <div className={styles['leaderboard-entry']}>
+          <div className={styles['leaderboard-current']}>
             <div className={styles['leaderboard-rank']}>2</div>
             <div className={styles['leaderboard-name']}>Natassa</div>
             <div className={styles['leaderboard-score']}>90</div>

@@ -55,6 +55,18 @@ $input-color: #D0C8D0;
     margin-bottom: 10px;
 }
 
+.leaderboard-current {
+    color: $main-color;
+    font-family: lato;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #978597;
+    border-radius: 20px;
+}
+
 .leaderboard-rank {
     text-align: left;
     width: 100px;
