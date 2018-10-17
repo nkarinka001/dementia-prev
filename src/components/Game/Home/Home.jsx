@@ -16,7 +16,8 @@ function Home() {
       <CreateGame />
       <Guide desc='Show this to your elderly friend' button='Start' />
       <Choose />
-      <MidGame name='Mr. John' progress='60' />
+      <MidGame name='Mr. John' progress='60' realGame={true} />
+      <MidGame name='Ms. Smith' realGame={false} />
       <EndGame />
     </div>
   )

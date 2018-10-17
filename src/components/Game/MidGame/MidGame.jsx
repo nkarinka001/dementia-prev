@@ -6,7 +6,7 @@ function MidGame(props) {
     <div className={styles['midgame']}>
       <div className={styles['midgame-content']}>
         <div className={styles['midgame-title']}>
-          Is this...
+          {props.realGame ? 'Is this...' : 'Remember!'}
         </div>
         <div className={styles['midgame-container']}>
           <div className={styles['midgame-prof']}>
@@ -17,20 +17,27 @@ function MidGame(props) {
                   src='https://image.flaticon.com/icons/png/512/23/23228.png' />
               </div>
               <div className={styles['midgame-text']}>
-                {props.name}?
+                {props.name}
+                {props.realGame ? '?' : ''}
               </div>
             </div>
           </div>
-          <div className={styles['progress-bar-container']}>
-            <div className={styles['progress-bar']}>
-              {props.progress}%
-            </div>
-          </div>
+          {props.realGame && (
+            <div className={styles['progress-bar-container']}>
+              <div className={styles['progress-bar']}>
+                {props.progress}%
+              </div>
+            </div>)}
         </div>
-        <div className={styles['btn-container']}>
-          <button className={styles['midgame-btn-yes']}>Yes</button>
-          <button className={styles['midgame-btn-no']}>No</button>
-        </div>
+        {props.realGame ? (
+          <div className={styles['btn-container']}>
+            <button className={styles['midgame-btn-yes']}>Yes</button>
+            <button className={styles['midgame-btn-no']}>No</button>
+          </div>) : (
+            <div className={styles['btn-container']}>
+              <button className={styles['midgame-btn']}>Previous</button>
+              <button className={styles['midgame-btn']}>Next</button>
+            </div>)}
       </div>
     </div>
   )

@@ -116,6 +116,17 @@ $input-color: #D0C8D0;
     background-color: #FC625D;
 }
 
+.midgame-btn {
+    width: 440px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-family: lato;
+    font-size: 60px;
+    color: white;
+    background-color: $button-color;
+}
+
 @media screen and (max-width: 600px) {
     .midgame-title {
         font-size: 20px;
@@ -155,11 +166,19 @@ $input-color: #D0C8D0;
     
     .midgame-btn-yes {
         width: 147px;
+        padding: 7px;
         border-radius: 7px;
         font-size: 20px;
     }
     
     .midgame-btn-no {
+        width: 147px;
+        padding: 7px;
+        border-radius: 7px;
+        font-size: 20px;
+    }
+
+    .midgame-btn {
         width: 147px;
         padding: 7px;
         border-radius: 7px;
