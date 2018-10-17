@@ -17,7 +17,7 @@ $input-color: #D0C8D0;
 .guide-container {
     background-color: $input-color;
     width: 810px;
-    height: 210px;
+    min-height: 210px;
     border-radius: 20px;
     padding: 40px;
     margin-top: 20px;
@@ -40,4 +40,26 @@ $input-color: #D0C8D0;
     font-size: 60px;
     margin-top: 20px;
     border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .guide-container {
+        width: 270px;
+        min-height: 70px;
+        border-radius: 7px;
+        padding: 13px;
+        margin-top: 7px;
+    }
+    
+    .guide-text {
+        font-size: 27px;
+    }
+    
+    .guide-btn {
+        width: 297px;
+        height: 47px;
+        border-radius: 7px;
+        font-size: 20px;
+        margin-top: 7px;
+    }
 }

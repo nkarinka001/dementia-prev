@@ -39,3 +39,17 @@ $input-color: #D0C8D0;
     color: white;
     font-family: lato;
 }
+
+@media screen and (max-width: 600px) {
+    .start-title {
+        font-size: 20px;
+    }
+
+    .game-button {
+        height: 125px;
+        width: 155px;
+        font-size: 27px;
+        margin: 3px;
+        border-radius: 7px;
+    }
+} 

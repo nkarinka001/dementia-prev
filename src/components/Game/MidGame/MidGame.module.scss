@@ -35,9 +35,22 @@ $input-color: #D0C8D0;
     width: 890px;
     height: 310px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.midgame-card {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 10px;
+}
+
+.midgame-prof {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .image-container {
@@ -58,6 +71,21 @@ $input-color: #D0C8D0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 35px;
+}
+
+.progress-bar {
+    background-color: $header-color;
+    width: 60%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: right;
+    font-size: 25px;
+    font-family: lato;
 }
 
 .btn-container {
@@ -86,4 +114,74 @@ $input-color: #D0C8D0;
     font-size: 60px;
     color: white;
     background-color: #FC625D;
+}
+
+.midgame-btn {
+    width: 440px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-family: lato;
+    font-size: 60px;
+    color: white;
+    background-color: $button-color;
+}
+
+@media screen and (max-width: 600px) {
+    .midgame-title {
+        font-size: 20px;
+    }
+    
+    .midgame-container {
+        border-radius: 10px;
+        width: 297px;
+        height: 103px;
+        margin-top: 3px;
+    }
+    
+    .image {
+        height: 67px;
+        width: 67px;
+    }
+    
+    .midgame-text {
+        font-size: 27px;
+    }
+    
+    .progress-bar-container {
+        width: 100%;
+        height: 12px;
+    }
+    
+    .progress-bar {
+        width: 60%;
+        height: 100%;
+        border-radius: 10px;
+        font-size: 8px;
+    }
+    
+    .btn-container {
+        margin-top: 7px;
+    }
+    
+    .midgame-btn-yes {
+        width: 147px;
+        padding: 7px;
+        border-radius: 7px;
+        font-size: 20px;
+    }
+    
+    .midgame-btn-no {
+        width: 147px;
+        padding: 7px;
+        border-radius: 7px;
+        font-size: 20px;
+    }
+
+    .midgame-btn {
+        width: 147px;
+        padding: 7px;
+        border-radius: 7px;
+        font-size: 20px;
+    }
 }

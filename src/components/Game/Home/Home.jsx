@@ -12,11 +12,12 @@ function Home() {
   return (
     <div className={styles['home-container']}>
       <Header />
-      <StartGame />
+      <StartGame title='Choose game' left='Default game' right='Custom game' />
       <CreateGame />
-      <Guide />
+      <Guide desc='Show this to your elderly friend' button='Start' />
       <Choose />
-      <MidGame />
+      <MidGame name='Mr. John' progress='60' realGame={true} />
+      <MidGame name='Ms. Smith' realGame={false} />
       <EndGame />
     </div>
   )
