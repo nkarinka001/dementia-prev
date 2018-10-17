@@ -18,6 +18,7 @@ function Home() {
       <Choose />
       <MidGame name='Mr. John' progress='60' realGame={true} />
       <MidGame name='Ms. Smith' realGame={false} />
+      <MidGame name='Ms. Smith' realGame={false} first={true}/>
       <EndGame />
     </div>
   )

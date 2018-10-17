@@ -34,10 +34,15 @@ function MidGame(props) {
             <button className={styles['midgame-btn-yes']}>Yes</button>
             <button className={styles['midgame-btn-no']}>No</button>
           </div>) : (
-            <div className={styles['btn-container']}>
-              <button className={styles['midgame-btn']}>Previous</button>
-              <button className={styles['midgame-btn']}>Next</button>
-            </div>)}
+            props.first ? (
+              <div className={styles['btn-container']}>
+                <button className={styles['midgame-btn-full']}>Next</button>
+              </div>
+            ) : (
+                <div className={styles['btn-container']}>
+                  <button className={styles['midgame-btn']}>Previous</button>
+                  <button className={styles['midgame-btn']}>Next</button>
+                </div>))}
       </div>
     </div>
   )
